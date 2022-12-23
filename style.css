@@ -72,18 +72,24 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 1018px;
 }
+
+.second_header_buttons:nth-of-type(1) { 
+  flex-grow: 1;
+}
+
 
 .second_header_buttons {
   display: flex;
-  flex-wrap: wrap;
-  flex-grow: 3;
+  flex-direction: row;
+  justify-content: flex-start;
   margin: 0;
-  width: 75%;
 }
 
 .second_header_first_button {
   display: inline-block;
+  width: 30%;
   font-size: 16px;
   border: 0px;
   padding: 20px;
@@ -106,6 +112,7 @@ main {
 }
 
 .second_header_second_button {
+  width: 30%;
   transition: 0.2s;
 }
 
@@ -115,14 +122,17 @@ main {
 }
 
 .second_header_third_button {
-  flex-grow: 1;
-  text-align: left;
-  width: 5%; 
+  width: 37%;
 }
 
 .second_header_third_button:hover {
   background-color: rgba(255, 255, 255, 0.3);
   transition: 0.3s;
+}
+
+.second_header_empty_div {
+  width: 40%;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .social_networks {
