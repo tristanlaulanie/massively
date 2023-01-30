@@ -249,6 +249,9 @@ main {
   flex-direction: column;
 }
 
+article img {
+  width: 85%;
+}
 .article_first_line, .article_second_line, .article_third_line {  
   display: flex;
   flex-direction: row;
@@ -267,6 +270,7 @@ article p {
   text-align: justify;
   padding: 1em 2em;
   letter-spacing: 2px;
+  width: 95%;
 }
 
 article button {
@@ -277,7 +281,7 @@ article button {
   letter-spacing: 1px;
 }
 
-article button:hover {
+ button:hover {
   cursor: pointer;
   color: rgb(19, 208, 208);
   border-color: rgb(19, 208, 208);
@@ -307,4 +311,38 @@ article button:hover {
   padding: 5em 1em;
   align-items: center;
 }
+
+/* - - - END NEWS ARTICLES BLOG - - - */
+
+/* - - - PAGE NAV - - - */
+
+ul {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li button {
+  padding: 1em 1.5em;
+  margin-bottom: 4em;
+}
+
+ul li div {
+  padding: 0.75em 1.5em;
+  margin-bottom: 3.45em;
+}
+
+li button {
+  font-family: "Playfair Display", serif;
+  font-weight: bolder;
+  background-color: transparent;
+  border: 1.5px solid rgb(165, 165, 165);
+}
+
+/* - - - END PAGE NAV - - - */
+
+
+
 
