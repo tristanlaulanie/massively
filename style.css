@@ -160,6 +160,7 @@ main {
 
 .blog_articles {
   background-color: white;
+  margin-bottom: 0em;
 }
 
 .top_article_blog {
@@ -197,7 +198,6 @@ main {
   font-weight: lighter;
   text-align: center;
   margin-bottom: 20px;
-
 }
 
 .top_article_blog p {
@@ -326,18 +326,15 @@ ul {
   list-style: none;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  background-color: white;
 }
 
 ul li button {
-  padding: 1em 1.5em;
+  margin-top: 4em;
   margin-bottom: 4em;
+  padding: 1em 1.5em;
 }
 
-ul li div {
-  padding: 0.75em 1.5em;
-  margin-bottom: 3.45em;
-}
 
 li button {
   font-family: "Playfair Display", serif;
@@ -348,6 +345,91 @@ li button {
 
 /* - - - END PAGE NAV - - - */
 
+/* - - - FORM & FOOTER - - - */
 
+.form_social_adress {
+  display: flex;
+  flex-direction: row;
+  width: 1390px;
+}
 
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: RGB(245, 245, 245);
+  border-right: 4px solid darkgray;
+  width: 50%;
+  padding: 3em;
+}
 
+form label {
+  padding-bottom: 1em;
+  font-family: "Heavitas", sans-serif;
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+
+form input, form textarea {
+  font-family: "Heavitas", sans-serif;
+  padding: 1em;
+  margin-bottom: 2em;
+  border: 2px solid black;
+}
+
+.send_message {
+  width: 40%;
+}
+
+.send_message:hover {
+  cursor: pointer;
+  color: rgb(19, 208, 208);
+  border-color: rgb(19, 208, 208);
+  transition: 0.2s;
+}
+
+.socials_adress_mail {
+  background-color: RGB(245, 245, 245);
+}
+
+.adress, .phone, .email, .socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  font-family: "Playfair Display", serif;
+  padding: 5em;
+  border-bottom: solid 2px darkgray;
+}
+
+.socials_adress_mail h1 {
+  font-family: "Heavitas", sans-serif;
+  font-size: medium;
+  letter-spacing: 1.5px;
+  padding-right: 3em;
+}
+
+.social-networks {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-networks i {
+  font-size: x-large;
+  padding-right: 2em;
+}
+
+.social-networks i:hover {
+  cursor: pointer;
+  color: rgb(19, 208, 208);
+  border-color: rgb(19, 208, 208);
+  transition: 0.2s;
+}
+
+footer {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-align: center;
+  font-size: x-large;
+  color: white;
+  font-style: italic;
+}
