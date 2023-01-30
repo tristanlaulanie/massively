@@ -20,7 +20,7 @@ body {
 }
 
 main {
-  width: 1100px;
+  width: 1200px;
   margin-left: 15%;
   margin-right: 15%;
 }
@@ -163,15 +163,23 @@ main {
   background-color: white;
 }
 
+.top_article_blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 4.5em;
+}
+
 .top_article_blog time {
   font-size: 1.25em;
   padding: 40px;
 }
 
 .top_article_blog_time_decoration {
-  height: 1px;
-  width: 30%;
-  background-color: rgb(185, 185, 185);
+  background-color: gray;
+  height: 2px;
+  width: 25em;
+  opacity: 0.2;
 }
 
 .top_article_blog_full_time_title {
@@ -213,5 +221,90 @@ main {
 .top_article_blog img:hover {
   cursor: pointer;
   transform: scale(1.04);
+}
+
+.top_article_blog button {
+  width: 15%;
+  padding-top: 1.3em;
+  padding-bottom: 1.3em;
+  background-color: transparent;
+  font-family: "Heavitas", sans-serif;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.top_article_blog button:hover {
+  cursor: pointer;
+  color: rgb(19, 208, 208);
+  border-color: rgb(19, 208, 208);
+  transition: 0.2s;
+}
+
+/* - - - END TOP ARTICLE BLOG - - - */
+
+/* - - - NEWS ARTICLES BLOG - - - */
+
+.news_articles_blog {
+  display: flex;
+  flex-direction: column;
+}
+
+.article_first_line, .article_second_line, .article_third_line {  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+article h2 {
+  font-family: "Heavitas", sans-serif;
+  letter-spacing: 5px;
+}
+
+article p {
+  font-family: "Playfair Display", serif;
+  text-align: justify;
+  padding: 1em 2em;
+  letter-spacing: 2px;
+}
+
+article button {
+  width: 25%;
+  padding: 1em 1em;
+  background-color: transparent;
+  font-family: "Heavitas", sans-serif;
+  letter-spacing: 1px;
+}
+
+article button:hover {
+  cursor: pointer;
+  color: rgb(19, 208, 208);
+  border-color: rgb(19, 208, 208);
+  transition: 0.2s;
+}
+
+.article_first_line article {
+  display: flex;
+  flex-direction: column;
+  border: 1.5px solid rgb(165, 165, 165);
+  padding: 5em 1em;
+  align-items: center;
+}
+
+.article_second_line article {
+  display: flex;
+  flex-direction: column;
+  border: 1.5px solid rgb(165, 165, 165);
+  padding: 5em 1em;
+  align-items: center;
+}
+
+.article_third_line article {
+  display: flex;
+  flex-direction: column;
+  border: 1.5px solid rgb(165, 165, 165);
+  padding: 5em 1em;
+  align-items: center;
 }
 
