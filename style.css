@@ -79,7 +79,6 @@ main {
   flex-grow: 1;
 }
 
-
 .second_header_buttons {
   display: flex;
   flex-direction: row;
@@ -251,6 +250,12 @@ main {
 
 article img {
   width: 85%;
+  transition: 0.4s;
+}
+
+article img:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
 .article_first_line, .article_second_line, .article_third_line {  
   display: flex;
